@@ -1,13 +1,16 @@
-# {PROJECT_NAME}
+# GOATS
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/HibiscusCollective/hibikey/badge)](https://scorecard.dev/viewer/?uri=github.com/HibiscusCollective/hibikey)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/HibiscusCollective/goats/badge)](https://scorecard.dev/viewer/?uri=github.com/HibiscusCollective/goats)
 
-{PROJECT_DESCRIPTION}
+Generally Okay Arbitrary Type Serialization (GOATS) is tooling to generate client side serialization/deserialization logic from server side code.
+As the name implies, the intent is not to squeeze the last drop of performance out of the process.
+Rather the aim is to be good enough to use in production, while eschewing the complexity introduced by more performant frameworks like protobuf/grpc, flatbuffers, captnproto, etc.
+Many applications will benefit more from a strong contract between server and client with minimal developer/tooling friction than from the added performance.
 
 ## License
 
-Copyright (C) {year}  {author(s)}
+Copyright (C) 2025 Pierre Fouilloux, Hibiscus Collective
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
