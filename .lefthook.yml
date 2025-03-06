@@ -1,0 +1,7 @@
+assert_lefthook_installed: true
+
+post-merge:
+  piped: true
+  commands:
+    "mise install":
+      run: mise install -y
