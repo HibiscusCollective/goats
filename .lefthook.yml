@@ -5,3 +5,9 @@ post-merge:
   commands:
     "mise install":
       run: mise install -y
+
+pre-push:
+  parallel: true
+  jobs:
+    - name: "Run tests"
+      run: cargo test --all --all-features
