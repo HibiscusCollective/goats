@@ -1,0 +1,2 @@
+# Ignore cargo.lock for library
+cargo.lock

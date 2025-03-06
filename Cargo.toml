@@ -1,0 +1,22 @@
+[workspace]
+resolver = "3"
+members = ["src/lib", "src/cli"]
+
+[workspace.package]
+version = "0.1.0"
+authors = [
+    "Pierre Fouilloux",
+    "Hibiscus Collective <collective@hibiscusgames.com>",
+]
+edition = "2024"
+rust-version = "1.85"
+description = "Generally Okay Arbitrary Type Serialization (GOATS) is tooling to generate client side serialization/deserialization logic from server side code."
+documentation = "https://docs.rs/goats"
+readme = "README.md"
+homepage = "https://github.com/HibiscusCollective/goats"
+repository = "https://github.com/HibiscusCollective/goats.git"
+license = "AGPL-3.0-or-later"
+keywords = ["contract", "schema", "code-generation", "web-programming", "api"]
+exclude = ["target/", "*.log", "*.tmp"]
+include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
+publish = true

@@ -11,14 +11,22 @@
 ## Allow package management
 !mise.toml
 
+## Allow rust
+!Cargo.toml
+!Cargo.lock
+!*.rs
+
 ## Allow documentation
 !docs/
 !docs/**/
-!docs/**/*.md
+!*.md
 
 !licenses/
 !licenses/*.txt
-!licenses/*.md
 
 !LICENSE
-!README.md
+
+## Allow source code
+!src/
+!src/lib
+!src/cli

@@ -1,0 +1,25 @@
+[package]
+name = "lib"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description.workspace = true
+documentation.workspace = true
+readme.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+keywords.workspace = true
+categories = [
+    "encoding",
+    "development-tools",
+    "development-tools::build-utils",
+    "development-tools::ffi",
+    "web-programming",
+]
+exclude.workspace = true
+include.workspace = true
+publish.workspace = true
+
+[dependencies]
