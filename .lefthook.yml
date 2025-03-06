@@ -13,7 +13,9 @@ pre-push:
       run: cargo test --all --all-features
 
 pre-commit:
-  parallel: true
+  piped: true
   jobs:
+    - name: "Run formatters"
+      run: mise run fmt
     - name: "Run linters"
       run: mise run lint
