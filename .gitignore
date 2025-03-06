@@ -1,16 +1,22 @@
 ## Ignore all by default
 *
 
-## Allow config
+## Allow workspace config
 !.github/
+!.config/
 !.vscode/
+# Git
 !.gitignore
+# IDE
 !.windsurfrules
 !.editorconfig
+# Lefthook
 !.lefthook.yml
-
-## Allow package management
+# Linters
+!.config/.markdownlint-cli2.jsonc
+# Mise
 !mise.toml
+!tasks.*.toml
 
 ## Allow rust
 !Cargo.toml

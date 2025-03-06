@@ -15,8 +15,5 @@ pre-push:
 pre-commit:
   parallel: true
   jobs:
-    - name: "Run clippy"
-      run: cargo clippy --all --all-features
-
-    - name: "Run fmt"
-      run: cargo fmt --all
+    - name: "Run linters"
+      run: mise run lint

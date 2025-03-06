@@ -1,3 +1,18 @@
 [tools]
 lefthook = "1.11.2"
+markdownlint-cli2 = "0.17.2"
 rust = "1.85.0"
+
+[vars]
+config_dir = "{{config_root}}/.config"
+
+[task_config]
+includes = [".config/tasks.md.toml"]
+
+[tasks.fmt]
+description = "Run all formatting tasks"
+depends = ["fmt:*"]
+
+[tasks.lint]
+description = "Run all linting tasks"
+depends = ["lint:*"]
