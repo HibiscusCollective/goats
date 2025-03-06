@@ -7,7 +7,7 @@ rust = "1.85.0"
 config_dir = "{{config_root}}/.config"
 
 [task_config]
-includes = [".config/tasks.md.toml"]
+includes = [".config/tasks.md.toml", ".config/tasks.rs.toml"]
 
 [tasks.fmt]
 description = "Run all formatting tasks"
@@ -16,3 +16,7 @@ depends = ["fmt:*"]
 [tasks.lint]
 description = "Run all linting tasks"
 depends = ["lint:*"]
+
+[tasks.fix]
+description = "Run all fixing tasks"
+depends = ["fix:*"]

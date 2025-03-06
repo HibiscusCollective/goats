@@ -1,0 +1,15 @@
+["fmt:rustfmt"]
+description = "Format code with rustfmt"
+run = "cargo fmt --all"
+
+["lint:clippy"]
+description = "Lint code with clippy"
+run = "cargo clippy --all --all-features"
+
+["lint:rustfmt"]
+description = "Lint code with rustfmt"
+run = "cargo fmt --all --check"
+
+["fix:clippy"]
+description = "Fix code with clippy"
+run = "cargo clippy --all --all-features --fix"
