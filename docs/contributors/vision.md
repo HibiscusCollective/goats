@@ -2,10 +2,10 @@
 
 The goal of this project is to provide a simple mechanism to generate client side types from server side models.
 The aim is not to replace protobuf, json, captnproto, smithy or other IDLs.
-Rather we aim to provide a minimal alternative to projects which have a need to maintain a consistent API contract but that don't require the complex serialisation and/or API modeling capabilities the IDLs offer.
+Rather we aim to provide a minimal alternative to projects which have a need to maintain a consistent API contract but that don't require the complex serialization and/or API modeling capabilities the IDLs offer.
 The guiding principles are simplicity and ease of use. We don't want to introduce a new language into the stack or complex build pipeline steps.
 We will instead provide annotations that can be applied to model definitions directly in the server source code and leverage existing code gen facilities in the server language to generate client side types and serializers/deserializers.
-Languages that don't natively support codegen are out of scope and server-to-server serialization/deserialization is also out of scope of this project.
+Languages that don't natively support code gen are out of scope and server-to-server serialization/deserialization is also out of scope of this project.
 
 ## Core Objectives
 

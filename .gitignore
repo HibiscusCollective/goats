@@ -13,12 +13,23 @@
 # Lefthook
 !.lefthook.yml
 # Linters
+!.config/.cspell.json
+!.config/.clippy.toml
+!.config/.rustfmt.toml
 !.config/.markdownlint-cli2.jsonc
+!.prettierignore
+!commitlint.config.ts
+!eslint.config.ts
 # Mise
 !mise.toml
 !tasks.*.toml
 # Rust
 !rust-toolchain.toml
+# Bun
+!bun.lock
+!package.json
+!tsconfig.json
+!eslint.config.ts
 
 ## Allow rust
 !Cargo.toml
@@ -37,5 +48,12 @@
 
 ## Allow source code
 !src/
-!src/lib
-!src/cli
+!src/lib/
+!src/cli/
+# Source code
+!src/*/src/
+!src/*/src/**/
+# Integration tests
+!src/*/tests/
+# Test data
+!src/**/testdata
