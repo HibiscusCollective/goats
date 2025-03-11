@@ -1,7 +1,6 @@
 [tools]
 lefthook = "1.11.2"
 markdownlint-cli2 = "0.17.2"
-rust = "1.85.0"
 
 [vars]
 config_dir = "{{config_root}}/.config"

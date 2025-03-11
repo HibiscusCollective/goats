@@ -17,6 +17,8 @@
 # Mise
 !mise.toml
 !tasks.*.toml
+# Rust
+!rust-toolchain.toml
 
 ## Allow rust
 !Cargo.toml
