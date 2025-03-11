@@ -6,9 +6,9 @@ markdownlint-cli2 = "0.17.2"
 
 [task_config]
 includes = [
-    ".config/tasks.md.toml",
-    ".config/tasks.rs.toml",
-    ".config/tasks.ts.toml",
+  ".config/tasks.md.toml",
+  ".config/tasks.rs.toml",
+  ".config/tasks.ts.toml",
 ]
 
 [vars]

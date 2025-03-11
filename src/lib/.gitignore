@@ -1,2 +1,8 @@
 # Ignore cargo.lock for library
 cargo.lock
+
+# Allow testdata file
+## Allow typescript
+!*.ts
+## Allow go files
+!*.go

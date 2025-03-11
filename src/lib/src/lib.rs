@@ -1,14 +1,7 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+mod golang;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+use std::io;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+pub fn generate(_: impl io::Read) -> Result<String, String> {
+    Ok("export interface Person {\n\tname: string\n\tage: number\n\tbirthday: Date\n}\n".to_string())
 }
